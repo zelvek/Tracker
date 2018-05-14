@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tracker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- Custom styles for this template -->
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Fortnite Tracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Chest map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discord</a>
+            </li>
+            <li class="nav-item">
+
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+
+
+
+<div class="ss" style="height : 250px">
+
+
+  <center>
+  <div class="container">
+    <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 col-centered">
+              <div id="imaginary_container">
+                  <div class="input-group stylish-input-group">
+                      <div class="input-group mb-3">
+<div class="yolo">
+                    <label>
+                      <input type="radio" name="ad" value="xbox" class="input-group-addon" aria-label="Radio button for following text input">
+    <img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/XBox_360.png" width="25px" height="25px" id="image">
+  </label>&nbsp;
+
+
+  <label>
+    <input type="radio" name="ad" value="Ps" class="input-group-addon" aria-label="Radio button for following text input">
+  <img src="https://icon-icons.com/icons2/844/PNG/256/Playstation_icon-icons.com_67099.png" width="25px" height="25px" id="image" >
+  </label>&nbsp;
+
+
+  <label>
+    <input type="radio" name="ad" value="Pc" class="input-group-addon" aria-label="Radio button for following text input" checked="checked">
+<img src="https://seeklogo.com/images/W/windows-10-icon-logo-5BC5C69712-seeklogo.com.png" width="25px" height="25px" id="image">
+</label>&nbsp;
+
+</div>
+
+<form method="post" id="form1">
+
+
+  <input type="text" class="form-control" placeholder="Player's username" name="id"   size="48" aria-describedby="basic-addon2">
+</form>
+
+  <div class="input-group-append">
+
+
+    <button class="btn btn-outline-secondary fas fa-check" form="form1" type="submit" style="background-color: white; color: black;"></button>
+  </div>
+</div>
+
+    </div>
+  </div>
+  </center>
+
+
+</div>
+
+<div class="container">
+    <br>
+	<div class="well">
+		<h2 class="text-divider"><span>Best players in the world !</span></h2>
+
+	</div>
+</div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <div >
+          </div>
+
+<!--  Texte du Centre-->
+<br>
+
+<div class="row">
+     <!----><div class="col hvr-float">
+       <div class="card col">
+         <div class="card-body">
+           <div class="row">
+             <div class="col">
+               <a href="/battleroyale/profil/BabyCuhh/pc">BabyCuhh</a>
+             </div>
+             <div class="col-md-2">
+               <i class="fas fa-trophy color-yellow faa-tada animated"></i> 42
+             </div>
+           </div>
+         </div>
+         <div class="card-footer">
+           Platform : <span class="text-uppercase text-bold pc"><!----><!----><!----><i class="fab fa-windows"></i> pc</span>
+         </div>
+       </div>
+
+<br>
+
+<!-- <div id="chart_div" style="background-color: #212529;"></div> -->
+
+<script type="text/javascript">
+
+
+
+google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Topping');
+      data.addColumn('number', 'Slices');
+      data.addRows([
+        ['Mushrooms', 99],
+
+        ['Pepperoni', 63]
+      ]);
+
+      // Set chart options
+      var options = {'title':'',
+                     'width':400,
+                     'backgroundColor': '#212529',
+                     'color': 'white',
+                     'height':300,
+                     legendTextStyle: {color:'white'}
+                   };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+</script>
+
+
+       <div class="card col">
+         <div class="card-body">
+           <div class="row">
+             <div class="col">
+               <a href="/battleroyale/profil/BabyCuhh/pc">BabyCuhh</a>
+             </div>
+             <div class="col-md-2">
+               <i class="fas fa-trophy color-yellow faa-tada animated"></i> 42
+             </div>
+           </div>
+         </div>
+         <div class="card-footer">
+           Platform : <span class="text-uppercase text-bold pc"><!----><!----><!----><i class="fab fa-windows"></i> pc</span>
+         </div>
+       </div>
+
+<br>
+
+<div class="card col">
+  <div class="card-body">
+    <div class="row">
+      <div class="col">
+        <a href="/battleroyale/profil/BabyCuhh/pc">BabyCuhh</a>
+      </div>
+      <div class="col-md-2">
+        <i class="fas fa-trophy color-yellow faa-tada animated"></i> 42
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    Platform : <span class="text-uppercase text-bold pc"><!----><!----><!----><i class="fab fa-windows"></i> pc</span>
+  </div>
+</div>
+
+     </div>
+  </div>
+
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="col-md-3"><a href="#"><img src="https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2Ffortnite-battleroyaleapproved-1920x1080-70139076a5efcf08da47c9bbbb824ebc5a10310e.jpg" class="img-responsive" style="width:130%; height:auto;"></a></div>
+
+
+        </div>
+
+
+
+        <div class="col-md-3">
+
+<br>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Top 5 Players </h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Points</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>15200</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>15851</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>54122</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Larry</td>
+                      <td>12322212</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+
+
+              </p>
+
+            </div>
+          </div>
+
+          <br>
+
+
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
